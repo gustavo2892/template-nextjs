@@ -10,7 +10,7 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./public"
   },
   "lint-staged": {
     "src/**/*": [
@@ -19,6 +19,7 @@
     ]
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "next": "12.0.8",
     "next-pwa": "^5.4.4",
     "react": "17.0.2",
@@ -40,7 +41,6 @@
     "@typescript-eslint/parser": "^5.10.0",
     "babel-loader": "^8.2.3",
     "babel-plugin-styled-components": "^2.0.2",
-    "cross-env": "^7.0.3",
     "eslint": "8.7.0",
     "eslint-config-next": "12.0.8",
     "eslint-config-prettier": "^8.3.0",
